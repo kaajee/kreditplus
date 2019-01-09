@@ -1,13 +1,9 @@
-AkuLaku Client
+KreditPlus Client
 ==============
-
-[![Build status](https://gramediadigital.visualstudio.com/Open%20Source/_apis/build/status/AkuLaku%20Build)](https://gramediadigital.visualstudio.com/Open%20Source/_build/latest?definitionId=104)
 
 **INCOMPLETE.  DO NOT USE**
 
 This is a small python client for payment package with Kreditplus.
-
-[Documentation @ ReadTheDocs](#)
 
 
 Quickstart
