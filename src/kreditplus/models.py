@@ -18,7 +18,7 @@ class NewOrderRequest:
                  month_installment,
                  name,
                  ktp_number,
-                 birthdate,
+                 birth_date,
                  address,
                  mobile_phone,
                  phone,
@@ -31,7 +31,7 @@ class NewOrderRequest:
         self.month_installment = month_installment
         self.name = name
         self.ktp_number = ktp_number
-        self.birthdate = birthdate
+        self.birth_date = birth_date
         self.address = address
         self.mobile_phone = mobile_phone
         self.phone = phone
@@ -48,12 +48,12 @@ class NewOrderRequest:
             "month_installment": self.month_installment,
             "name": self.name,
             "ktp_number": self.ktp_number,
-            "birthdate": self.birthdate,
+            "birth_date": self.birth_date,
             "address": self.address,
             "mobile_phone": self.mobile_phone,
             "phone": self.phone,
             "office_name": self.office_name,
             "office_phone": self.office_phone,
             "sibling_name": self.sibling_name,
-            "sibling_phone": self.sibling_phone,
+            "sibling_phone": self.sibling_phone
         }

@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="df3e3754-48d5-4f22-af41-d8fbae448b57" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/kreditplus.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/kreditplus.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/features/models.feature" beforeDir="false" afterPath="$PROJECT_DIR$/features/models.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/features/steps/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/features/steps/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kreditplus/__init__.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/kreditplus/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/kreditplus/models.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,7 +13,7 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/kreditplus$__init__.coverage" NAME="__init__ Coverage Results" MODIFIED="1547092806172" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/kreditplus" />
-    <SUITE FILE_PATH="coverage/kreditplus$Unit_Test.coverage" NAME="Unit Test Coverage Results" MODIFIED="1547095520602" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/kreditplus$Unit_Test.coverage" NAME="Unit Test Coverage Results" MODIFIED="1547104366707" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
@@ -34,8 +29,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/features/steps/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="141">
-              <caret line="32" column="8" lean-forward="true" selection-start-line="32" selection-start-column="8" selection-end-line="34" selection-end-column="68" />
+            <state relative-caret-position="158">
+              <caret line="36" column="36" lean-forward="true" selection-start-line="36" selection-start-column="36" selection-end-line="36" selection-end-column="36" />
               <folding>
                 <element signature="e#53#73#0" expanded="true" />
               </folding>
@@ -46,8 +41,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/kreditplus/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-641">
-              <caret line="4" column="32" lean-forward="true" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
+            <state relative-caret-position="-289">
+              <caret line="26" column="30" lean-forward="true" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -209,44 +204,44 @@
       <workItem from="1547021690242" duration="3920000" />
       <workItem from="1547029507313" duration="2370000" />
       <workItem from="1547089257731" duration="5406000" />
-      <workItem from="1547094723476" duration="1055000" />
+      <workItem from="1547094723476" duration="3979000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unit_Test - 2019.01.10 at 11h 16m 39s.xml">
+    <history-entry file="Unit_Test - 2019.01.10 at 13h 58m 01s.xml">
       <configuration name="Unit Test" configurationId="PyBehaveRunConfigurationType" />
     </history-entry>
-    <history-entry file="Unit_Test - 2019.01.10 at 11h 23m 29s.xml">
+    <history-entry file="Unit_Test - 2019.01.10 at 14h 04m 58s.xml">
       <configuration name="Unit Test" configurationId="PyBehaveRunConfigurationType" />
     </history-entry>
-    <history-entry file="Unit_Test - 2019.01.10 at 11h 33m 12s.xml">
+    <history-entry file="Unit_Test - 2019.01.10 at 14h 05m 34s.xml">
       <configuration name="Unit Test" configurationId="PyBehaveRunConfigurationType" />
     </history-entry>
-    <history-entry file="Unit_Test - 2019.01.10 at 11h 34m 57s.xml">
+    <history-entry file="Unit_Test - 2019.01.10 at 14h 05m 58s.xml">
       <configuration name="Unit Test" configurationId="PyBehaveRunConfigurationType" />
     </history-entry>
-    <history-entry file="Unit_Test - 2019.01.10 at 11h 38m 07s.xml">
+    <history-entry file="Unit_Test - 2019.01.10 at 14h 06m 55s.xml">
       <configuration name="Unit Test" configurationId="PyBehaveRunConfigurationType" />
     </history-entry>
-    <history-entry file="Unit_Test - 2019.01.10 at 11h 38m 41s.xml">
+    <history-entry file="Unit_Test - 2019.01.10 at 14h 09m 18s.xml">
       <configuration name="Unit Test" configurationId="PyBehaveRunConfigurationType" />
     </history-entry>
-    <history-entry file="Unit_Test - 2019.01.10 at 11h 38m 59s.xml">
+    <history-entry file="Unit_Test - 2019.01.10 at 14h 10m 15s.xml">
       <configuration name="Unit Test" configurationId="PyBehaveRunConfigurationType" />
     </history-entry>
-    <history-entry file="Unit_Test - 2019.01.10 at 11h 44m 57s.xml">
+    <history-entry file="Unit_Test - 2019.01.10 at 14h 10m 45s.xml">
       <configuration name="Unit Test" configurationId="PyBehaveRunConfigurationType" />
     </history-entry>
-    <history-entry file="Unit_Test - 2019.01.10 at 11h 44m 58s.xml">
+    <history-entry file="Unit_Test - 2019.01.10 at 14h 11m 14s.xml">
       <configuration name="Unit Test" configurationId="PyBehaveRunConfigurationType" />
     </history-entry>
-    <history-entry file="Unit_Test - 2019.01.10 at 11h 45m 20s.xml">
+    <history-entry file="Unit_Test - 2019.01.10 at 14h 11m 38s.xml">
       <configuration name="Unit Test" configurationId="PyBehaveRunConfigurationType" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13815000" />
+    <option name="totallyTimeSpent" value="16739000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -303,6 +298,9 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/features/models.py" />
+    <entry file="file://$PROJECT_DIR$/src/kreditplus/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/features/models.feature">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -310,20 +308,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/kreditplus/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/kreditplus/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-641">
-          <caret line="4" column="32" lean-forward="true" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
+        <state relative-caret-position="-289">
+          <caret line="26" column="30" lean-forward="true" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/features/steps/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="32" column="8" lean-forward="true" selection-start-line="32" selection-start-column="8" selection-end-line="34" selection-end-column="68" />
+        <state relative-caret-position="158">
+          <caret line="36" column="36" lean-forward="true" selection-start-line="36" selection-start-column="36" selection-end-line="36" selection-end-column="36" />
           <folding>
             <element signature="e#53#73#0" expanded="true" />
           </folding>
