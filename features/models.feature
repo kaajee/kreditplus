@@ -4,3 +4,8 @@ Feature: Request Serialization
     Given a create order request
     When I serialize the object
     Then the order request is converted to a dictionary properly
+
+  Scenario: Save order request
+    Given a create order request
+    When I submit order request
+    Then the order request is saved to database

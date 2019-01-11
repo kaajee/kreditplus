@@ -3,8 +3,12 @@ Models
 ======
 Represent data that is sent to the the KreditPlus.
 """
+import sqlite3
+import logging
 
-__all__ = ['NewOrderRequest']
+log = logging.getLogger('kreditplus')
+
+__all__ = ['NewOrderRequest', 'SaveOrderRequest', 'OrderDetail']
 
 
 class NewOrderRequest:
