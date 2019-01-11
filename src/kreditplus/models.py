@@ -1,7 +1,6 @@
 """
 Models
 ======
-
 Represent data that is sent to the the KreditPlus.
 """
 
@@ -13,47 +12,61 @@ class NewOrderRequest:
     """
 
     def __init__(self,
-                 order_number,
-                 order_price,
-                 month_installment,
-                 name,
-                 ktp_number,
+                 ref_number,
+                 total_price,
+                 product_name,
+                 receiver_name,
+                 receiver_address,
+                 tenor_instalment,
+                 full_name,
+                 id_card_no,
                  birth_date,
                  address,
-                 mobile_phone,
-                 phone,
-                 office_name,
-                 office_phone,
-                 sibling_name,
-                 sibling_phone):
-        self.order_number = order_number
-        self.order_price = order_price
-        self.month_installment = month_installment
-        self.name = name
-        self.ktp_number = ktp_number
+                 handphone,
+                 email):
+        self.ref_number = ref_number
+        self.total_price = total_price
+        self.product_name = product_name
+        self.receiver_name = receiver_name
+        self.receiver_address = receiver_address
+        self.tenor_instalment = tenor_instalment
+        self.full_name = full_name
+        self.id_card_no = id_card_no
         self.birth_date = birth_date
         self.address = address
-        self.mobile_phone = mobile_phone
-        self.phone = phone
-        self.office_name = office_name
-        self.office_phone = office_phone
-        self.sibling_name = sibling_name
-        self.sibling_phone = sibling_phone
+        self.handphone = handphone
+        self.email = email
+
+    @property
+    def content(self):
+        """ Generates a stringified verision of this object not for API consumption, but for generating signatures.
+
+        :rtype: str
+        """
+        required_attributes = [
+            'ref_number', 'total_price', 'product_name', 'receiver_name', 'receiver_address', 'tenor_instalment',
+            'full_name', 'id_card_no', 'birth_date', 'address', 'handphone', 'email',
+        ]
+        return ''.join([getattr(self, attr) for attr in required_attributes])
 
     def serialize(self):
+        """ Converts this object to a dictionary, suitable for serializing in an HTTP request.
 
+        :return: A dictionary that representation of this class
+        :rtype: dict
+        """
         return {
-            "order_number": self.order_number,
-            "order_price": self.order_price,
-            "month_installment": self.month_installment,
-            "name": self.name,
-            "ktp_number": self.ktp_number,
-            "birth_date": self.birth_date,
+            "refNo": self.ref_number,
+            "totalPrice": self.total_price,
+            "productName": self.product_name,
+            "receiverName": self.receiver_name,
+            "receiverAddress": self.receiver_address,
+            "tenorInstalment": self.tenor_instalment,
+            "fullName": self.full_name,
+            "idCardNo": self.id_card_no,
+            "birthDate": self.birth_date,
             "address": self.address,
-            "mobile_phone": self.mobile_phone,
-            "phone": self.phone,
-            "office_name": self.office_name,
-            "office_phone": self.office_phone,
-            "sibling_name": self.sibling_name,
-            "sibling_phone": self.sibling_phone
+            "handphone": self.handphone,
+            "email": self.email,
         }
+
