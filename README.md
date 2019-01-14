@@ -3,7 +3,7 @@ KreditPlus Client
 
 **INCOMPLETE.  DO NOT USE**
 
-This is a small python client for integrating applications with the AkuLaku API.
+This is a small python client for integrating applications with the KreditPlus.
 
 Quickstart
 ----------
