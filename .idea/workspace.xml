@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="590d0d88-6c37-47cc-bac6-64546d20a794" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/kreditplus/helpers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/features/models.feature" beforeDir="false" afterPath="$PROJECT_DIR$/features/models.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/features/steps/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/features/steps/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/kreditplus/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/kreditplus/models.py" afterDir="false" />
@@ -16,27 +13,18 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/kreditplus$kreditplus.coverage" NAME="kreditplus Coverage Results" MODIFIED="1547448898563" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/kreditplus$kreditplus.coverage" NAME="kreditplus Coverage Results" MODIFIED="1547459223854" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FavoritesManager">
     <favorites_list name="kreditplus" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/features/models.feature">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" column="29" lean-forward="true" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/features/steps/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="901">
-              <caret line="113" lean-forward="true" selection-start-line="113" selection-end-line="113" />
+            <state relative-caret-position="245">
+              <caret line="159" column="19" selection-start-line="159" selection-start-column="9" selection-end-line="159" selection-end-column="19" />
               <folding>
                 <element signature="e#0#20#0" expanded="true" />
               </folding>
@@ -44,11 +32,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/kreditplus/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-527">
-              <caret line="86" column="11" lean-forward="true" selection-start-line="86" selection-start-column="11" selection-end-line="86" selection-end-column="11" />
+            <state relative-caret-position="160">
+              <caret line="145" column="40" lean-forward="true" selection-start-line="145" selection-start-column="40" selection-end-line="145" selection-end-column="40" />
+              <folding>
+                <element signature="e#73#87#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -58,6 +49,15 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="221">
               <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/features/models.feature">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="183">
+              <caret line="27" column="29" lean-forward="true" selection-start-line="27" selection-start-column="29" selection-end-line="27" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -74,17 +74,17 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/requirements.txt" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/features/models.feature" />
         <option value="$PROJECT_DIR$/src/kreditplus/helpers.py" />
-        <option value="$PROJECT_DIR$/src/kreditplus/models.py" />
         <option value="$PROJECT_DIR$/features/steps/models.py" />
+        <option value="$PROJECT_DIR$/features/models.feature" />
+        <option value="$PROJECT_DIR$/src/kreditplus/models.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-11" />
-    <option name="width" value="980" />
-    <option name="height" value="1031" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="948" />
+    <option name="width" value="981" />
+    <option name="height" value="1032" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -176,44 +176,44 @@
       <option name="presentableId" value="Default" />
       <updated>1547176001335</updated>
       <workItem from="1547176002885" duration="22529000" />
-      <workItem from="1547431989944" duration="10761000" />
+      <workItem from="1547431989944" duration="20661000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="kreditplus - 2019.01.14 at 13h 52m 05s.xml">
+    <history-entry file="kreditplus - 2019.01.14 at 15h 13m 50s.xml">
       <configuration name="kreditplus" configurationId="PyBehaveRunConfigurationType" />
     </history-entry>
-    <history-entry file="kreditplus - 2019.01.14 at 13h 52m 20s.xml">
+    <history-entry file="kreditplus - 2019.01.14 at 15h 15m 55s.xml">
       <configuration name="kreditplus" configurationId="PyBehaveRunConfigurationType" />
     </history-entry>
-    <history-entry file="kreditplus - 2019.01.14 at 13h 52m 29s.xml">
+    <history-entry file="kreditplus - 2019.01.14 at 15h 16m 35s.xml">
       <configuration name="kreditplus" configurationId="PyBehaveRunConfigurationType" />
     </history-entry>
-    <history-entry file="kreditplus - 2019.01.14 at 13h 52m 36s.xml">
+    <history-entry file="kreditplus - 2019.01.14 at 15h 29m 41s.xml">
       <configuration name="kreditplus" configurationId="PyBehaveRunConfigurationType" />
     </history-entry>
-    <history-entry file="kreditplus - 2019.01.14 at 13h 52m 47s.xml">
+    <history-entry file="kreditplus - 2019.01.14 at 15h 30m 02s.xml">
       <configuration name="kreditplus" configurationId="PyBehaveRunConfigurationType" />
     </history-entry>
-    <history-entry file="kreditplus - 2019.01.14 at 13h 52m 56s.xml">
+    <history-entry file="kreditplus - 2019.01.14 at 15h 31m 33s.xml">
       <configuration name="kreditplus" configurationId="PyBehaveRunConfigurationType" />
     </history-entry>
-    <history-entry file="kreditplus - 2019.01.14 at 13h 53m 14s.xml">
+    <history-entry file="kreditplus - 2019.01.14 at 16h 21m 28s.xml">
       <configuration name="kreditplus" configurationId="PyBehaveRunConfigurationType" />
     </history-entry>
-    <history-entry file="kreditplus - 2019.01.14 at 13h 53m 57s.xml">
+    <history-entry file="kreditplus - 2019.01.14 at 16h 45m 10s.xml">
       <configuration name="kreditplus" configurationId="PyBehaveRunConfigurationType" />
     </history-entry>
-    <history-entry file="kreditplus - 2019.01.14 at 13h 54m 40s.xml">
+    <history-entry file="kreditplus - 2019.01.14 at 16h 46m 00s.xml">
       <configuration name="kreditplus" configurationId="PyBehaveRunConfigurationType" />
     </history-entry>
-    <history-entry file="kreditplus - 2019.01.14 at 13h 54m 58s.xml">
+    <history-entry file="kreditplus - 2019.01.14 at 16h 47m 07s.xml">
       <configuration name="kreditplus" configurationId="PyBehaveRunConfigurationType" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33290000" />
+    <option name="totallyTimeSpent" value="43190000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -225,16 +225,16 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="653" height="687" extended-state="0" />
+    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4972973" weight="0.35521886" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4972973" visible="true" weight="0.14979757" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.24957842" />
       <window_info id="Favorites" order="2" sideWeight="0.5027027" side_tool="true" weight="0.35581788" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.33333334" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3927928" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3285968" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39253998" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32972974" />
@@ -337,23 +337,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/features/steps/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="901">
-          <caret line="113" lean-forward="true" selection-start-line="113" selection-end-line="113" />
-          <folding>
-            <element signature="e#0#20#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/kreditplus/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-527">
-          <caret line="86" column="11" lean-forward="true" selection-start-line="86" selection-start-column="11" selection-end-line="86" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/kreditplus/helpers.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -361,10 +344,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/features/steps/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="159" column="19" selection-start-line="159" selection-start-column="9" selection-end-line="159" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#20#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/features/models.feature">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="29" lean-forward="true" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
+        <state relative-caret-position="183">
+          <caret line="27" column="29" lean-forward="true" selection-start-line="27" selection-start-column="29" selection-end-line="27" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/kreditplus/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="145" column="40" lean-forward="true" selection-start-line="145" selection-start-column="40" selection-end-line="145" selection-end-column="40" />
+          <folding>
+            <element signature="e#73#87#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

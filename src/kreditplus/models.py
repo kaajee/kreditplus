@@ -3,8 +3,11 @@ Models
 ======
 Represent data that is sent to the the KreditPlus.
 """
+import smtplib
 
 # from kreditplus.exceptions import KreditPlusError
+from email.mime.multipart import MIMEMultipart
+from email.mime.text import MIMEText
 
 __all__ = ['OrderDetail', 'NewOrderRequest']
 
@@ -12,7 +15,8 @@ __all__ = ['OrderDetail', 'NewOrderRequest']
 class OrderDetail:
     """ An order line item (generally as part of a `NewOrderRequest`)
     """
-    def __init__(self, ref_number, total_price, product_name, receiver_name, receiver_address, tenor_instalment,):
+
+    def __init__(self, ref_number, total_price, product_name, receiver_name, receiver_address, tenor_instalment, ):
         """
         :param `str` ref_number: A product SKU for one of the line items that was ordered.
         :param `int` total_price: The total price of order.
@@ -45,6 +49,7 @@ class OrderDetail:
 class NewOrderRequest:
     """ An order which is sent to the KreditPlus.
     """
+
     def __init__(self,
                  full_name,
                  id_card_no,
@@ -133,8 +138,33 @@ class NewOrderRequest:
             "message": ""
         }
 
-    # def send_order(self, order_request):
+    @staticmethod
+    def send_order(email_data, order_request):
         # TODO:
-        #   1. Setup mail connection
+        #   1. Setup mail connection - DONE
         #   2. Create email body for order
-        #   3. Send order request
+        #   3. Send order request - DONE
+
+        # Get Order request
+        data = order_request.serialize()
+
+        # Compose basic message headers
+        msg = MIMEMultipart()
+        msg['From'] = email_data['from_address']
+        msg['To'] = email_data['to_address']
+        msg['Subject'] = "KreditPlus New Order Request"
+
+        body = "Hello!"
+        msg.attach(MIMEText(body, 'plain'))
+
+        server = smtplib.SMTP(email_data['mail_server'],  email_data['mail_port'])
+        server.starttls()
+        # Next, log in to the server
+        server.login(email_data['mail_username'], email_data['mail_password'])
+
+        # Send the mail
+        text = msg.as_string()
+        server.sendmail(email_data['from_address'], email_data['to_address'], text)
+        server.quit()
+
+        return "send"

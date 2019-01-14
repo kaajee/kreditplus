@@ -22,6 +22,12 @@ Feature: Request Serialization
     When i validate order request
     Then i get error response
 
+  Scenario: Send order request
+    Given an EmailData with mail_server = smtp.gmail.com, mail_port = 587, mail_username = mail@example.com, mail_password = password, from_address = from@example.com, to_address = to@example.com
+    And a valid order request
+    When i send order request
+    Then i get string "send"
+
 #  Scenario: Save order request
 #    Given a create order request
 #    When I submit order request

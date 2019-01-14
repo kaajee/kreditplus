@@ -135,3 +135,27 @@ def step_impl(context):
             tenor_instalment=12,
         ).serialize()
     )
+
+
+@when("i send order request")
+def step_impl(context):
+    context.send_email = context.order_request.send_order(context.EmailData, context.order_request)
+
+
+@then('i get string "{send}"')
+def step_impl(context, send):
+    assert context.send_email == send
+
+
+@given("an EmailData with mail_server = {mail_server}, mail_port = {mail_port}, "
+       "mail_username = {mail_username}, mail_password = {mail_password}, "
+       "from_address = {from_address}, to_address = {to_address}")
+def step_impl(context, mail_server, mail_port, mail_username, mail_password, from_address, to_address):
+    context.EmailData = {
+        "mail_server": mail_server,
+        "mail_port": mail_port,
+        "mail_username": mail_username,
+        "mail_password": mail_password,
+        "from_address": from_address,
+        "to_address": to_address,
+    }
