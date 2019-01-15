@@ -4,10 +4,11 @@ Models
 Represent data that is sent to the the KreditPlus.
 """
 import smtplib
+# import unittest
 
 # from kreditplus.exceptions import KreditPlusError
-from email.mime.multipart import MIMEMultipart
-from email.mime.text import MIMEText
+# from mock import patch, call
+from kreditplus.helpers import build_message, send_message
 
 __all__ = ['OrderDetail', 'NewOrderRequest']
 
@@ -74,17 +75,6 @@ class NewOrderRequest:
         self.sibling_phone = sibling_phone
         self.details = details if type(details) is str else details.serialize()
 
-    # @property
-    # def content(self):
-    #     """ Generates a stringified version of this object not for API consumption, but for generating signatures.
-    #     :rtype: str
-    #     """
-    #     required_attributes = [
-    #         'full_name', 'id_card_no', 'birth_date', 'address', 'handphone', 'phone', 'office_name', 'office_phone',
-    #         'sibling_name', 'details'
-    #     ]
-    #     return ''.join([getattr(self, attr) for attr in required_attributes])
-
     def serialize(self):
         """ Converts this object to a dictionary, suitable for serializing in an HTTP request.
         :return: A dictionary that representation of this class
@@ -141,30 +131,24 @@ class NewOrderRequest:
     @staticmethod
     def send_order(email_data, order_request):
         # TODO:
-        #   1. Setup mail connection - DONE
-        #   2. Create email body for order
-        #   3. Send order request - DONE
+        #   1. Create email body for order
 
         # Get Order request
         data = order_request.serialize()
 
-        # Compose basic message headers
-        msg = MIMEMultipart()
-        msg['From'] = email_data['from_address']
-        msg['To'] = email_data['to_address']
-        msg['Subject'] = "KreditPlus New Order Request"
+        # Build message
+        from_address = email_data['from_address']
+        to_address = email_data['to_address']
+        mail_subject = "subject"
+        mail_msg = "message"
 
-        body = "Hello!"
-        msg.attach(MIMEText(body, 'plain'))
+        msg = build_message(
+            from_address, [to_address], mail_subject, mail_msg)
 
-        server = smtplib.SMTP(email_data['mail_server'],  email_data['mail_port'])
-        server.starttls()
-        # Next, log in to the server
-        server.login(email_data['mail_username'], email_data['mail_password'])
+        # Send message
+        mail_server = email_data['mail_server']
+        mail_port = email_data['mail_port']
+        mail_username = email_data['mail_username']
+        mail_password = email_data['mail_password']
 
-        # Send the mail
-        text = msg.as_string()
-        server.sendmail(email_data['from_address'], email_data['to_address'], text)
-        server.quit()
-
-        return "send"
+        send_message(mail_server, mail_port, mail_username, mail_password, msg)

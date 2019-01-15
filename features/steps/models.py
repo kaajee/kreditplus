@@ -1,5 +1,7 @@
-from behave import *
+import smtplib
 
+from behave import *
+from unittest.mock import patch, call
 from kreditplus.models import NewOrderRequest, OrderDetail
 
 
@@ -139,12 +141,14 @@ def step_impl(context):
 
 @when("i send order request")
 def step_impl(context):
-    context.send_email = context.order_request.send_order(context.EmailData, context.order_request)
+    with patch("smtplib.SMTP") as mock_smtp:
+        context.order_request.send_order(context.EmailData, context.order_request)
+        context.mail_response = mock_smtp.return_value
 
 
 @then('i get string "{send}"')
 def step_impl(context, send):
-    assert context.send_email == send
+    assert context.mail_response.sendmail.called is True
 
 
 @given("an EmailData with mail_server = {mail_server}, mail_port = {mail_port}, "
